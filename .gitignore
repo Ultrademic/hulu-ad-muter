@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.log
+*~
+*.swp
+.idea/
+.vscode/
+node_modules/
+*.crx
+*.pem
+*.xpi
+*.zip
