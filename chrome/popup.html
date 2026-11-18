@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hulu Ad Muter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="icons/icon48.png" alt="" width="32" height="32" />
+      <div>
+        <h1>Hulu Ad Muter</h1>
+        <p class="tagline">Mutes Hulu ads in this browser</p>
+      </div>
+    </header>
+
+    <label class="toggle-row" for="enabled">
+      <span>Mute ads</span>
+      <input type="checkbox" id="enabled" checked />
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+
+    <p id="status" class="status status-idle">Looking for Hulu…</p>
+    <p id="signal" class="signal" hidden></p>
+
+    <label class="debug-row" for="debug">
+      <input type="checkbox" id="debug" />
+      <span>Debug logging</span>
+    </label>
+
+    <p class="hint">
+      Only the Hulu tab is muted, not your whole browser. Open DevTools
+      (F12) → Console to copy debug lines if an ad slips through.
+    </p>
+    <script src="popup.js"></script>
+  </body>
+</html>
